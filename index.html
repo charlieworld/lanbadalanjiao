@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <title>藍八大攔轎 - 中華民國大陸災胞寶島旅遊攻略</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="「藍八大攔轎」旅遊攻略包括藍八景點、藍八活動、藍八購物和藍八餐飲介紹，和文明深度旅遊及行程規劃等資訊，助您體驗獨特的藍八文化。快來拜訪亞洲首個民主共和國內僅存的8個九二共識區，攔轎來藍八，滿載一路發。攔轎申冤救中國，承認九二不久餓。">
+  <meta name="author" content="EYECTV">
+  <link rel="shortcut icon" href="https://c2.staticflickr.com/6/5643/30141022303_de774abdea_o.png" />
+  <meta property="og:title" content="藍八大攔轎 - 中華民國大陸災胞寶島旅遊攻略" />
+  <meta property="og:image" content="https://c2.staticflickr.com/6/5485/30659696632_29d074ec74_k.jpg" />
+
+  <!-- Bootstrap Core CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/blue8.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-85595843-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<body>
+<div id="quiz">
+  <h1 class="quiz_title">先來個小測驗，讓我們更了解你</h1>
+  <div class="container quiz_item">
+    <div class="row text-center ">
+      <div class="col-xs-12 quiz_subtitle">
+        <h2>如果只能選一種，我比較想要把＿＿當作主食。</h2>
+      </div>
+      <div class="col-xs-6 quiz_optionbr"><div class="quiz_option" id="quiz1_A"><h3>芋頭</h3></div></div>
+      <div class="col-xs-6 quiz_optionbr"><div class="quiz_option" id="quiz1_B"><h3>地瓜</h3></div></div>
+    </div>
+  </div>
+  <div class="container quiz_item">
+    <div class="row text-center ">
+      <div class="col-xs-12 quiz_subtitle">
+        <h2>如果必須要搬家，我比較想要搬去＿＿。</h2>
+      </div>
+      <div class="col-xs-6 quiz_optionbr"><div class="quiz_option" id="quiz2_A"><h3>山上</h3></div></div>
+      <div class="col-xs-6 quiz_optionbr"><div class="quiz_option" id="quiz2_B"><h3>海邊</h3></div></div>
+    </div>
+  </div>
+  <div class="quiz_option quiz_option_summit" id="quiz_go"><h2>確定</h2></div>
+  <div class="umm">恩。</div>
+</div>
+
+<div id="quiz_res" style="display:none;">
+  <h1 class="quiz_title">測驗結果</h1>
+  <div class="container quiz_item">
+    <div class="row text-center ">
+      <div class="col-xs-12">
+        <br/>
+        <h3 id="quiz_txt"></h3>
+        <h3 id="quiz_road"></h3><br/>
+        <div class="quiz_more" id="quiz_more"><h2>看更多藍八</h2></div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center" style="margin-top:40px;"><img src="img/LOGO_big.svg" class="quiz_logo"/></div>
+</div>
+
+<div id="main" style="display:none;"> <!-- main -->
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand"><a href="#top" onclick=$("#menu-close").click();>藍八大攔轎 </a></li>
+            <li><a href="#top" onclick=$("#menu-close").click();>- 首頁</a></li>
+            <li><a href="#about" onclick=$("#menu-close").click();>- 關於藍八</a></li>
+            <li><a href="#cities" onclick=$("#menu-close").click();>- 藍八縣市</a></li>
+            <li class="sidebar-brand" style="color:#999;font-size:14px;">藍八導覽</li>
+            <li class="sidebar-sub"><a href="#d_newtaipeicity" onclick=$("#menu-close").click();>- 新北市</a></li>
+            <li class="sidebar-sub"><a href="#d_hsinchu" onclick=$("#menu-close").click();>- 新竹縣</a></li>
+            <li class="sidebar-sub"><a href="#d_miaoli" onclick=$("#menu-close").click();>- 苗栗縣</a></li>
+            <li class="sidebar-sub"><a href="#d_nantou" onclick=$("#menu-close").click();>- 南投縣</a></li>
+            <li class="sidebar-sub"><a href="#d_hualien" onclick=$("#menu-close").click();>- 花蓮縣</a></li>
+            <li class="sidebar-sub"><a href="#d_taitung" onclick=$("#menu-close").click();>- 台東縣</a></li>
+            <li class="sidebar-sub"><a href="#d_kinmen" onclick=$("#menu-close").click();>- 金門縣</a></li>
+            <li class="sidebar-sub"><a href="#d_matsu" onclick=$("#menu-close").click();>- 連江縣</a></li>
+            <li><a href="#d_matsu" onclick=$("#menu-close").click();>- 這網站到底誰做的？</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="top" class="header bg_white">
+        <div class="text-vertical-center">
+            <h1>藍八大攔轎</h1>
+            <h3>中華民國大陸災胞寶島旅遊攻略</h3>
+            <br>
+            <a href="#about" class="btn btn-blue8 btn-blue8-l"><h4>更多藍八資訊</h4></a>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <img src="img/LOGO_big.svg"  style="height:60vh; margin:auto"/>
+                    <p class="lead"></br>「藍八大攔轎」旅遊攻略包括藍八景點、藍八活動、藍八購物和藍八餐飲介紹，</br>和文明深度旅遊及行程規劃等資訊，助您體驗獨特的藍八文化。</br></br>快來拜訪亞洲首個民主共和國內僅存的8個九二共識區，攔轎來藍八，滿載一路發。</br>攔轎申冤救中國，承認九二不久餓。</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- cities -->
+    <section id="cities" class="services bg_gray_light">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>藍八縣市</h2>
+                    <hr class="small">
+                    <div class="row">
+                      <div class="col-xs-6 col-sm-3 col-md-3 ">
+                          <div class="service-item">
+                              <img src="img/newtaipeicity.svg" class="cities_imgsz"/>
+                              <h4><strong>新北市</strong></h4>
+                              <p class="cities_intro">站在自由中國最北端眺望故土，自環繞著台北的群山上遠眺沒有九二共識的台北101...</p>
+                              <a href="#d_newtaipeicity" class="btn btn-blue8 btn-blue8-s">更多</a>
+                          </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-3 col-md-3">
+                          <div class="service-item">
+                              <img src="img/hsinchu.svg" class="cities_imgsz"/>
+                              <h4><strong>新竹縣</strong></h4>
+                              <p class="cities_intro">在秀麗的丘陵間，迴盪著源自中華民國廣東省的海陸腔客家話。幸福的科技新貴群聚，因為支持九二共識，臉上洋溢著笑容。</p>
+                              <a href="#d_hsinchu" class="btn btn-blue8 btn-blue8-s">更多</a>
+                          </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-3 col-md-3">
+                          <div class="service-item">
+                              <img src="img/miaoli.svg" class="cities_imgsz"/>
+                              <h4><strong>苗栗縣</strong></h4>
+                              <p class="cities_intro">見證藍八縣市觀光發展奇蹟，讓您在張藥房原址，感受最新ＶＲ虛擬實境觀光體驗。</p>
+                              <a href="#d_miaoli" class="btn btn-blue8 btn-blue8-s">更多</a>
+                          </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-3 col-md-3">
+                          <div class="service-item">
+                              <img src="img/nantou.svg" class="cities_imgsz"/>
+                              <h4><strong>南投縣</strong></h4>
+                              <p class="cities_intro">台灣的內地不是南投，台灣的內地不是南投，台灣的內地不是南投。</br>
+                                很重要所以說三遍。</p>
+                              <a href="#d_nantou" class="btn btn-blue8 btn-blue8-s">更多</a>
+                          </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-3 col-md-3">
+                          <div class="service-item">
+                              <img src="img/hualien.svg" class="cities_imgsz"/>
+                              <h4><strong>花蓮縣</strong></h4>
+                              <p class="cities_intro">嗯。</p>
+                              <a href="#d_hualien" class="btn btn-blue8 btn-blue8-s">更多</a>
+                          </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-3 col-md-3">
+                          <div class="service-item">
+                              <img src="img/taitung.svg" class="cities_imgsz"/>
+                              <h4><strong>台東縣</strong></h4>
+                              <p class="cities_intro">綿延176公里海岸線，是南島文明發光發亮的地方，讓我們從台東出發找回東南亞的南島中國情。。</p>
+                              <a href="#d_taitung" class="btn btn-blue8 btn-blue8-s">更多</a>
+                          </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-3 col-md-3">
+                          <div class="service-item">
+                              <img src="img/kinmen.svg" class="cities_imgsz"/>
+                              <h4><strong>金門縣</strong></h4>
+                              <p class="cities_intro">「我看見軍人們的背影，我的淚很快地流下來了。」 你喝的不是高粱酒，是毋忘在莒的情操...</p>
+                              <a href="#d_kinmen" class="btn btn-blue8 btn-blue8-s">更多</a>
+                          </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-3 col-md-3">
+                          <div class="service-item">
+                              <img src="img/matsu.svg" class="cities_imgsz"/>
+                              <h4><strong>連江縣</strong></h4>
+                              <p class="cities_intro">保衛臺澎的前哨站永遠為著反共復國而存在，座座依山傍海的島嶼都有著最賺人熱淚的愛國故事...</p>
+                              <a href="#d_matsu" class="btn btn-blue8 btn-blue8-s">更多</a>
+                          </div>
+                      </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Callout -->
+    <aside class="callout" style="margin-bottom:40px;">
+        <div class="text-vertical-center">
+            <h1>中華民國最美的風景，是人</h1>
+        </div>
+    </aside>
+
+    <!-- city detil -->
+    <section class="bg_gray_light city_detil">
+      <h2 class="city_detil_title_main">藍八導覽</h2>
+      <div class="container">
+
+          <div class="row city_detil_item"  id="d_newtaipeicity">
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 city_detil_imgbr city_detil_img" style="background-image:url('https://c2.staticflickr.com/6/5637/30688355001_fa765957d4_o.jpg')">
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <h2 class="city_detil_title"><b>新北市</b></h2>
+                <p class="city_detil_txt">
+                    新北熱搜藍八景點：</br>
+                    </br>
+                    綿延的海岸線、大江出大海的淡水河口、環抱台北盆地的山丘稜線，造就新北市獨一無二的美景與無堅不摧的觀光動能！</br>
+                    有伴侶的你，推薦雨中漫步在萬人空巷的黃金山城九份、與情人牽手走過漁人碼頭情人橋、颱風天到溫泉小鎮烏來享受期間限定的泥沙冷泉。</br>
+                    單身的摩登少男少女，推薦站在施工中的捷運圍欄旁，享受後現代的藝術衝擊，閉上眼，讓最便捷的新北交通超現實來到你面前。三環三線，與你夢裡相見。</br>
+                    </br>
+                    新北藍八必嚐美食：</br>
+                    </br>
+                    遵從九二共識就是要喝淡水阿婆酸梅湯配淡水阿婆鐵蛋！讓阿嬤的話沁透你全身的每個細胞！</br>
+                    </br>
+                    新北攔轎必殺技：</br>
+                    </br>
+                    在新北想攔轎，只需要一個move到任一剪綵現場，朱立倫絕對笑容滿面接納諫言，聽好聽滿。
+                </p>
+              </div>
+          </div>
+          <div class="row city_detil_item" id="d_hsinchu">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 city_detil_imgbr city_detil_img" style="background-image:url('https://c2.staticflickr.com/6/5672/30739965726_cbe5598bb5_b.jpg')">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              <h2 class="city_detil_title"><b>新竹縣</b></h2>
+              <p class="city_detil_txt">
+                竹縣藍八景點：</br>
+                </br>
+                在堅定支持九二共識的新竹縣，您可以體驗獨特的正統中華客家文化，更見證人口成長率在中華民國自由地區名列前茅的發展奇蹟。</br>
+                來到新竹縣首府竹北市，您可以看見林立的高樓大廈與無人居住的豪宅，在在證實九二共識兩岸共榮的指導原則下，迅速的發展成果。在新竹縣，科學園區的科技新貴展現中華兒女努力認份的美德，日以繼夜展現我泱泱中國的卓越競爭力。</br>
+                </br>
+                竹縣藍八必嚐美食：</br>
+                </br>
+                新埔粄條讓您體驗濃郁的客家文化，與兩岸間血濃與水的滑溜情感。</br>
+                </br>
+                竹縣藍八新鮮事：</br>
+                </br>
+                義民節令人嘆為觀止的千斤大神豬，比來自中華民國偏安首都台北的連姓神豬重五倍！這正是九二共識讓這個幸福城市人畜興旺的鐵證。
+              </p>
+            </div>
+          </div>
+          <div class="row city_detil_item" id="d_miaoli">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 city_detil_imgbr city_detil_img" style="background-image:url('https://c2.staticflickr.com/6/5818/30141027473_1e624ba690_b.jpg')">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              <h2 class="city_detil_title"><b>苗栗縣</b></h2>
+              <p class="city_detil_txt">
+                苗栗熱搜藍八景點：</br>
+                </br>
+                苗栗因為政府財力的前景與濃郁的歷史忿圍，被人稱為「台灣的希臘」。暢遊在三義外環道讓您近距離接觸瀕臨絕種的台灣石虎（但不保證是死是活）。苗栗高鐵站旁的觀光土樓，仿照大陸福建地區客家土樓造型興建，讓您體驗置身大陸故土的懷舊氛圍，絕不會沾染不夠正統的台灣客家情懷。位於苗栗縣通霄鎮馬家莊的馬奮館，讓您緬懷中華民國前領島人馬英九先生胎嘎厚的一面。</br>
+                </br>
+                苗栗藍八新鮮事：</br>
+                </br>
+                在硬體建設方面，苗栗有隨處可見的科學園區，提供無限的土地讓您的廠房進駐，在自由地區置產不是夢！在藝文活動方面，苗栗國際藝術季不顧財政壓力，忍辱負重，重金禮聘世界三大男高音賣力演出，讓您深切體會到藍八縣市的國際化與發展實力。
+              </p>
+            </div>
+          </div>
+          <div class="row city_detil_item" id="d_nantou">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 city_detil_imgbr city_detil_img" style="background-image:url('https://c2.staticflickr.com/6/5550/30475871010_87b03a8cf2_o.jpg')">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              <h2 class="city_detil_title"><b>南投縣</b></h2>
+              <p class="city_detil_txt">
+                南投熱搜藍八景點：</br>
+                </br>
+                自由地區唯一不靠海的縣市，層層疊疊的山峰暗藏許許多多優美的秘境！島內最高峰玉山聳立其中、島內最長河流濁水溪蜿蜒而過、島內最歐風清靜農場拔山倒樹建民宿給你住、剃羊毛給你看。</br>
+                最廣為人知的南投景點日月潭點綴於群山之中，不僅有紀念世界的偉人、人類的救星蔣空一格公的母親的慈恩塔，更有台蛙的精神象徵九蛙疊像。</br>
+                然而日月潭所在的魚池鄉長陳錦倫，是不遵守九二共識的民進黨員，因此堅守一個中國原則的你，絕對能夠坐懷不亂，過魚池鄉而不入的！</br>
+                </br>
+                南投藍八必嚐美食：</br>
+                </br>
+                林明溱特製砂石套餐，讓學童營養午餐充滿愛與希望。
+              </p>
+            </div>
+          </div>
+          <div class="row city_detil_item" id="d_hualien">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 city_detil_imgbr city_detil_img" style="background-image:url('https://c2.staticflickr.com/6/5738/30144866934_6e506fb858_o.jpg')">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              <h2 class="city_detil_title"><b>花蓮縣</b></h2>
+              <p class="city_detil_txt">
+                嗯。（查一下）
+              </p>
+            </div>
+          </div>
+          <div class="row city_detil_item" id="d_taitung">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 city_detil_imgbr city_detil_img" style="background-image:url('https://c2.staticflickr.com/6/5774/30475866680_ab5c719f92_b.jpg')">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              <h2 class="city_detil_title"><b>台東縣</b></h2>
+              <p class="city_detil_txt">
+                台東熱搜藍八景點：</br>
+                </br>
+                傍著太平洋的海岸線、倚著PM2.5最罕有的東部空氣，期待著未來核廢料將帶來的刺激興奮感。</br>
+                讓我們一同告別東海岸，只要九二、不要久餓，用國際級的度假村宣揚中華美學並宣示觀光起飛的決心！露天泳池池水的沁涼、房間直通沙灘的浪漫，讓我們用南島風情的棕梠樹換掉不入流的無名熱帶灌木，讓我們吃海鮮買珊瑚用「心」體驗真正在地的東部風情。</br>
+                </br>
+                台東藍八必嚐美食：</br>
+                </br>
+                早上起來刷刷牙後，享盡卑南豬血湯、藍蜻蜓、鹹冰棒、池上便當、洛神冰淇淋、釋迦與小米酒，這些絕對是淪陷災區享受不到的美味。
+              </p>
+            </div>
+          </div>
+          <div class="row city_detil_item" id="d_kinmen">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 city_detil_imgbr city_detil_img" style="background-image:url('https://c2.staticflickr.com/6/5554/30688355481_3e112b1cc1_b.jpg')">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              <h2 class="city_detil_title"><b>金門縣</b></h2>
+              <p class="city_detil_txt">
+                金門熱搜藍八景點：</br>
+                </br>
+                從軍事備戰地轉型成觀光聖地，從鎖國的隔海眺望蛻變為三通開放的觀光統戰。讓我們用「鋼刀、貢糖、高粱酒」喚醒你忠貞愛國的靈魂。</br>
+                走訪八二三炮戰紀念園碑、瞻仰過去對淪陷故土心戰喊話的北山播音牆、到八達樓子向保家衛國的「支那七勇士」致敬。我們走過的一切歷史，都是為了反攻大陸、光復故土，讓我們長存中華心、擁抱中國夢，打倒萬惡的共匪、重建偉大的中華民國！</br>
+                </br>
+                金門藍八必嚐美食：</br>
+                </br>
+                透明澄澈的高粱，一口乾掉非法政權掌控的不自由；58度的灼烈，一杯燃盡對共匪的眷戀。</br>
+                烈酒統戰，金門必嚐！
+              </p>
+            </div>
+          </div>
+          <div class="row city_detil_item" id="d_matsu">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 city_detil_imgbr city_detil_img" style="background-image:url('https://c2.staticflickr.com/6/5637/30475871400_542561cc31_b.jpg')">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              <h2 class="city_detil_title"><b>連江縣</b></h2>
+              <p class="city_detil_txt">
+                連江熱搜藍八景點：</br>
+                </br>
+                轉角處處可見反共復國的標語，堅定同胞們保守唯一一個中國的決心。</br>
+                到北海坑道、八八坑道探訪過去先烈的足跡，大口喝下東涌陳高，擦去為同胞們留下的淚水，讓我們在馬港天后宮前向媽祖發誓，光復大陸淪陷失土，完整一個中國，是我們九二共識的核心，以及未來兩岸要攜手前進的方向！</br>
+                </br>
+                連江藍八新鮮事：</br>
+                </br>
+                每年4月~8月馬祖的「藍眼淚」奇景會隨著海浪散發藍色光芒，就像島內民眾對九二共識的明反反覆覆。藍眼淚，是一種生存在海中的非寄生甲藻，能進行生物發光，當水溫、海流以及潮汐的條件共同配合之下才會出現，當南風夠強，且起浪後才會造成驚擾發出藍光。</br>
+                你，藍到發光了嗎？
+              </p>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg_white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>眼球中央電視台</strong></h4>
+                    <p>本台為中華民國國家電視台，為政府喉舌。 </br>
+                    全面深化島內思想改革、全面落實只說政府好話、全面檢討反政府言論、全面奉承領導人馬、全面樂觀看待國家危難。</br>
+                    用眼一分鐘，看透世間60秒。</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:eyectv@gmail.com">eyectv@gmail.com</a></li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://www.facebook.com/EYECTV/" target="_blank"><i class="fa fa-facebook fa-fw fa-3x txt_blue8"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCTqPBBnP2T57kmiPQ87986g" target="_blank"><i class="fa fa-youtube fa-fw fa-3x txt_blue8"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://translocal.asia/index.php?m=Article&a=show&id=352" target="_blank"><i class="fa fa-youtube-play fa-fw fa-3x txt_blue8"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Power by 眼球中央電視台 @ 2016 </br>感謝 枋寮小控肉 與 維基百科 提供藍八資料圖片</p>
+                </div>
+            </div>
+        </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </footer>
+</div> <!-- main -->
+
+<a href="lanjiao.html"><div class="runBtn" id="runBtn" style="display:none">點我攔轎</div></a>
+<div id="run" class="run" style="display:none">
+  <span class="content" id="run_txt">
+    怨言讀取中........................................<span class="content-space"></span>
+  </span>
+</div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+
+    var RETRY = true;
+
+    $(document).ready(function(){
+      /* 不要來這邊看拉～～～  這樣就不好玩拉 ~~~~~~*/
+      var quiz_one = -1;
+      var quiz_two = -1;
+      $("#quiz1_A").click(function(){
+        quiz_one = 0;
+        $("#quiz1_A").addClass('quiz_option_active');
+        $("#quiz1_B").removeClass('quiz_option_active');
+      });
+      $("#quiz1_B").click(function(){
+        quiz_one = 1;
+        $("#quiz1_A").removeClass('quiz_option_active');
+        $("#quiz1_B").addClass('quiz_option_active');
+      });
+      $("#quiz2_A").click(function(){
+        quiz_two = 0;
+        $("#quiz2_A").addClass('quiz_option_active');
+        $("#quiz2_B").removeClass('quiz_option_active');
+      });
+      $("#quiz2_B").click(function(){
+        quiz_two = 1;
+        $("#quiz2_A").removeClass('quiz_option_active');
+        $("#quiz2_B").addClass('quiz_option_active');
+      });
+
+      $("#quiz_go").click(function(){
+        /* 不要來這邊看拉～～～  這樣就不好玩拉 ~~~~~~*/
+        if(quiz_one == -1 || quiz_two == -1){
+          // not finished
+        }
+        else{
+
+          if(quiz_one == 0){
+            if(quiz_two == 0)
+              show_quiz(0);
+            else
+              show_quiz(1);
+          }
+          else{
+            if(quiz_two == 0)
+              show_quiz(2);
+            else
+              show_quiz(3);
+          }
+        }
+      });
+      $("#quiz_more").click(function(){
+        $("#quiz_res").hide().fadeOut();
+        $("#main").show().fadeIn();
+        $("#runBtn").show().fadeIn();
+        $("#run").show().fadeIn();
+        getblue8List();
+      });
+
+      $(".umm").click(function(){
+        $("#quiz").hide().fadeOut();
+        $("#main").show().fadeIn();
+        $("#runBtn").show().fadeIn();
+        $("#run").show().fadeIn();
+        getblue8List();
+      });
+
+    });
+
+    function show_quiz(res){
+        $("#quiz").hide().fadeOut();
+      switch (res) {
+        case 0:
+          $("#quiz_txt").text("九二共識於你就如美景與野餐，一定要試試雲霧繚繞的下午茶！");
+          $("#quiz_road").text("推薦路線：秘境山城苗栗行");
+          $("#quiz_res").show().fadeIn();
+          break;
+        case 1:
+          $("#quiz_txt").text("你與九二共識的距離很近，請不要錯過天海一線的美景！");
+          $("#quiz_road").text("推薦路線：金馬小旅行");
+          $("#quiz_res").show().fadeIn();
+          break;
+        case 2:
+          location.href ="error.html"
+          break;
+        case 3:
+          $("#quiz_txt").text("你嚮往著九二共識的美好，有著與海洋一般遼闊的視野與夢想！");
+          $("#quiz_road").text("推薦路線：絕景花東斷崖遊");
+          $("#quiz_res").show().fadeIn();
+          break;
+        default:
+
+      }
+    }
+
+
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+
+    function getblue8List(id)
+    {
+        var tempURL = "./feed/feed.json";
+        $.ajax({
+            url: tempURL,
+            success: function (result, textStatus, jqXHR) {
+                RETRY = true;
+                console.log(result.result);
+                showbule8List(result.result);
+            },
+            timeout:60000,
+            error: function(xhr, status, err) {
+                console.log("=================================");
+                console.log("[AJAX] ERROR ! GetCount: ",GetCount);
+                GetCount = 0;
+                console.log("[AJAX] ERROR ! Clear GetCount: ",GetCount);
+                console.log("[AJAX] ERROR ! RETRY: ",RETRY);
+                if(RETRY)
+                  {
+                    RETRY = false;
+                    console.log("[AJAX] ERROR ! do RETRY  !! ");
+                    $.ajax(this);
+                  }
+                console.log("=================================");
+            }
+        });
+
+    }
+
+    function showbule8List(dataList){
+      console.log('1111',dataList);
+      var txt ="";
+      for (var i=0;i <dataList.length;i++)
+      {
+        txt += dataList[i].locate + dataList[i].content + '    '
+      }
+      console.log('!!',txt);
+      $('#run_txt').text(txt);
+    }
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    //#to-top button appears after scrolling
+    var fixed = false;
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 250) {
+            if (!fixed) {
+                fixed = true;
+                // $('#to-top').css({position:'fixed', display:'block'});
+                $('#to-top').show("slow", function() {
+                    $('#to-top').css({
+                        position: 'fixed',
+                        display: 'block'
+                    });
+                });
+            }
+        } else {
+            if (fixed) {
+                fixed = false;
+                $('#to-top').hide("slow", function() {
+                    $('#to-top').css({
+                        display: 'none'
+                    });
+                });
+            }
+        }
+    });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <title>藍八大攔轎 - 藍八大攔轎申冤系統</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="藍八大攔轎 - 藍八大攔轎申冤系統">
+  <meta name="author" content="EYECTV">
+  <link rel="shortcut icon" href="https://c2.staticflickr.com/6/5643/30141022303_de774abdea_o.png" />
+  <meta property="og:title" content="藍八大攔轎 - 藍八大攔轎申冤系統" />
+  <meta property="og:image" content="https://c2.staticflickr.com/6/5485/30659696632_29d074ec74_k.jpg" />
+
+  <!-- Bootstrap Core CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/blue8.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+
+<script src="js/jquery.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-85595843-1', 'auto');
+  ga('send', 'pageview');
+
+  var clickState = false;
+  var locate = -1;
+  var RETRY = true;
+  var GETCOUNT =0;
+
+  $(document).ready(function(){
+    $('#summit').click(function(){
+
+      txt_length = $('#lanjiao_txt').val().length;
+
+      if(locate >=0 && locate <=7 && txt_length >0 )
+      {
+        $('#summit').addClass('sent');
+        $('#summit h2').text('傳送中.....');
+        data_post(get_locatetxt(locate),$('#lanjiao_txt').val())
+      }
+      else{
+        alert("「攔轎地點」未選擇 或是 「申冤內容」未輸入！")
+      }
+
+    });
+    $('#backto').click(function(){
+      location.href='index.html'
+    });
+
+
+
+
+  });
+
+  function showsuccess(){
+    $('#viewFrom').hide();
+    $('#viewMsg').show();
+  }
+
+  function data_post(locate,text){
+
+    alert ("攔轎功能已封存，這裡只剩下回憶。")
+
+    /*
+    if(clickState == false)
+    {
+      clickState = true;
+      $.ajax({
+          url: 'http://www.lanbadalanjiao.com.tw:8000/lanjiao',
+          method: 'POST',
+          data:{
+            'locate': locate,
+            'text': text
+          },
+          success: function (result, textStatus, jqXHR) {
+              RETRY = true;
+              showsuccess();
+          },
+          timeout:60000,
+          error: function(xhr, status, err) {
+              if (xhr.status !== 200)
+              {
+                  console.log("========================== [AJAX] ERROR ! ==========================");
+                  console.log("[AJAX] ERROR ! xhr: ",xhr);
+                  console.log("[AJAX] ERROR ! Clear GetCount: ",GETCOUNT);
+                  console.log("[AJAX] ERROR ! RETRY: ",RETRY);
+                  console.log("====================================================================");
+                  $('#summit h2').text('傳送失敗，重整網頁試試');
+              }
+          }
+      });
+    }
+    */
+
+  }
+
+  function get_locatetxt(tar){
+
+    switch (tar) {
+      case 0:
+        return "【新北市】"
+        break;
+      case 1:
+        return "【新竹縣】"
+        break;
+      case 2:
+        return "【苗栗縣】"
+        break;
+      case 3:
+        return "【南投縣】"
+        break;
+      case 4:
+        return "【花蓮縣】"
+        break;
+      case 5:
+        return "【台東縣】"
+        break;
+      case 6:
+        return "【金門縣】"
+        break;
+      case 7:
+        return "【連江縣】"
+        break;
+      default:
+
+    }
+  }
+
+  function locate_sel(item){
+    locate = item;
+    for(var i=0;i<=7;i++)
+    {
+      if(i ==item)
+        $('#locate'+i).addClass('locate_item_act');
+      else
+        $('#locate'+i).removeClass('locate_item_act');
+    }
+  }
+
+  function check() {
+  var regC = /[^ -~]+/g;
+  var regE = /\D+/g;
+  var str = lanjiao_txt.value;
+
+  if (regC.test(str)){
+      lanjiao_txt.value = lanjiao_txt.value.substr(0,35);
+  }
+
+  if(regE.test(str)){
+      lanjiao_txt.value = lanjiao_txt.value.substr(0,35);
+  }
+  }
+
+</script>
+<style>
+  body{color:#092689; font-weight: 700}
+  .main{ margin:auto; margin-top:70px;border-radius: 10px;letter-spacing: 3px;max-width: 800px;}
+  .lanjiao_logo{width: 150px; height: 150px;}
+  .lanjiao_title{line-height: 150px;}
+  .back{background-color: #092689; color: white; padding-top: 1px; padding-bottom: 10px;  margin: auto; text-align: center; cursor:pointer;border-radius: 5px;}
+  .back:hover{ background-color: #000689;}
+  .locate_item{ color: #092689; border:#092689 solid 1px;border-radius: 5px; padding: 10px 5px;  margin: auto; text-align: center; cursor:pointer;
+    font-size:2rem; margin-bottom: 20px;}
+  .locate_item_act{
+    background-color: #000689;color: white;
+  }
+  #summit{margin-top: 40px;}
+  #lanjiao_txt{width: 100%; height: 50px; font-size: 1.5rem;}
+  .sent{background-color:#efefef; color:#000689;}
+  .sent:hover{background-color:#efefef}
+  #viewMsg{ text-align: center;}
+  #backto{margin-top: 40px;}
+  @media only screen and (max-width: 768px){
+    .main{margin-top:40px;}
+    h1{font-size: 2.8rem;}
+    h3{font-size: 2.3rem;}
+    .locate_item{font-size: 1.8rem;}
+  }
+</style>
+
+<body>
+
+
+<div class="container-fluid main" >
+    <div class="row">
+      <div class="col-xs-12  col-sm-12 text-center lanjiao_title" >
+        <h1>藍八大攔轎申冤系統</h1>
+      </div>
+    </div>
+    <div id="viewFrom">
+      <div class="row">
+        <div class="col-xs-12  col-sm-12" >
+          <h3>攔轎地點 *</h3>
+        </div>
+        <div class="col-xs-4  col-sm-3" >
+          <div class="locate_item" onclick="locate_sel(0)" id="locate0">新北市</div>
+        </div>
+        <div class="col-xs-4  col-sm-3" >
+          <div class="locate_item" onclick="locate_sel(1)" id="locate1">新竹縣</div>
+        </div>
+        <div class="col-xs-4  col-sm-3" >
+          <div class="locate_item" onclick="locate_sel(2)" id="locate2">苗栗縣</div>
+        </div>
+        <div class="col-xs-4  col-sm-3" >
+          <div class="locate_item" onclick="locate_sel(3)" id="locate3">南投縣</div>
+        </div>
+        <div class="col-xs-4  col-sm-3" >
+          <div class="locate_item" onclick="locate_sel(4)" id="locate4">花蓮縣</div>
+        </div>
+        <div class="col-xs-4  col-sm-3" >
+          <div class="locate_item" onclick="locate_sel(5)" id="locate5">台東縣</div>
+        </div>
+        <div class="col-xs-4  col-sm-3" >
+          <div class="locate_item" onclick="locate_sel(6)"id="locate6" >金門縣</div>
+        </div>
+        <div class="col-xs-4  col-sm-3" >
+          <div class="locate_item" onclick="locate_sel(7)"id="locate7" >連江縣</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12  col-sm-12" >
+          <h3>申冤內容 *</h3>
+        </div>
+        <div class="col-xs-12  col-sm-12" >
+          <input type="text" maxlength="35" id="lanjiao_txt" placeholder=" 輸入怨言，最多35字" onkeyup="check();">
+        </div>
+        <div class="col-xs-12  col-sm-12" >
+          <div class="back" id="summit"><h2>立即申冤</h2></div>
+        </div>
+      </div>
+    </div>
+    <div id="viewMsg" style="display:none;">
+      <div class="row">
+        <div class="col-xs-12  col-sm-12" >
+          <h3>您的冤言已入轎，請重新整理藍八頁面，即可見到眾多怨言和你一起鬼吼鬼叫。</h3>
+        </div>
+        <div class="col-xs-12  col-sm-12" >
+          <div class="back" id="backto"><h2>返回藍八大攔轎</h2></div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+</body>
+
+</html>
