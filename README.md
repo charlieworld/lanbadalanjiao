@@ -6,6 +6,8 @@
 
 回憶封存與此，供中華兒女們回味。
 
+封存頁面： [https://charlieworld.github.io/lanbadalanjiao/] https://charlieworld.github.io/lanbadalanjiao/
+
 ## 相關報導與連結：
 
 [眼球中央粉絲團貼文](https://www.facebook.com/EYECTV/posts/1818977125051239?__xts__[0]=68.ARBJJhqE7LMgxoz7FNA6OzDPVHz3oaQFhqGUyJP_0bs9tHpW_a9mepX2fypZy3bplPx6QTh-DCoomZ7PWhhSGeAhLigGOuSjQMTYMsITMII4GXTPORjSueogspakL8L_oaZOTl6ojwhXf2IkOQoiprdOi8ZwCYHKeVeXPunqbtJ5Z2Ncftyuaevc4uBs0_CMIK2WQN7P5BSin0-rUdQSIvcm6Vs-IaCRfwv_dYiaMaShehsDNiDSCP5g8-k3aTsSDFPdRtEezDD9HqqupIEkQmCkRPYAGftaDRT1LhEhJ8yicBf12pGx0e81ucCnRlN-PfbaRAfk6_6-p206zW9lR9IEI8Dy&__tn__=-R)
