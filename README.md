@@ -6,7 +6,7 @@
 
 回憶封存與此，供中華兒女們回味。
 
-封存頁面： [https://charlieworld.github.io/lanbadalanjiao/] https://charlieworld.github.io/lanbadalanjiao/
+封存頁面： [https://charlieworld.github.io/lanbadalanjiao/](https://charlieworld.github.io/lanbadalanjiao/)
 
 ## 相關報導與連結：
 
